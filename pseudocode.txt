@@ -1,0 +1,30 @@
+START
+
+Inisialisasi suaraA = 0
+Inisialisasi suaraB = 0
+
+DO
+    Tampilkan pilihan voting
+        1. Kandidat A
+        2. Kandidat B
+
+    Input pilihanUser
+
+    IF pilihanUser == 1 THEN
+        suaraA bertambah 1
+    ELSE IF pilihanUser == 2 THEN
+        suaraB bertambah 1
+    ELSE
+        Tampilkan "Pilihan tidak valid"
+    ENDIF
+
+    Tanya "Apakah ingin melanjutkan voting?"
+    Input lanjut
+
+WHILE lanjut == 'y'
+
+Tampilkan hasil voting
+    Tampilkan suaraA
+    Tampilkan suaraB
+
+END
