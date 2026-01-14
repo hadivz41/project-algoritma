@@ -1,0 +1,63 @@
+START
+
+Buat struktur data KARYAWAN
+    id
+    nama
+    jabatan
+    gaji
+
+Buat list dataKaryawan
+
+DO
+    Tampilkan MENU
+        1. Tambah Data Karyawan
+        2. Tampilkan Data Karyawan
+        3. Edit Data Karyawan
+        4. Hapus Data Karyawan
+        0. Keluar
+
+    Input pilihanMenu
+
+    IF pilihanMenu == 1 THEN
+        Input id, nama, jabatan, gaji
+        Simpan data ke dataKaryawan
+        Tampilkan pesan "Data berhasil ditambahkan"
+
+    ELSE IF pilihanMenu == 2 THEN
+        IF dataKaryawan kosong THEN
+            Tampilkan "Data karyawan kosong"
+        ELSE
+            Tampilkan seluruh data karyawan
+        ENDIF
+
+    ELSE IF pilihanMenu == 3 THEN
+        Input idKaryawan
+        Cari data berdasarkan id
+        IF data ditemukan THEN
+            Input data baru
+            Update data karyawan
+            Tampilkan "Data berhasil diubah"
+        ELSE
+            Tampilkan "ID tidak ditemukan"
+        ENDIF
+
+    ELSE IF pilihanMenu == 4 THEN
+        Input idKaryawan
+        Cari data berdasarkan id
+        IF data ditemukan THEN
+            Hapus data dari dataKaryawan
+            Tampilkan "Data berhasil dihapus"
+        ELSE
+            Tampilkan "ID tidak ditemukan"
+        ENDIF
+
+    ELSE IF pilihanMenu == 0 THEN
+        Tampilkan "Program selesai"
+
+    ELSE
+        Tampilkan "Menu tidak valid"
+    ENDIF
+
+WHILE pilihanMenu != 0
+
+END
